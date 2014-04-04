@@ -1,7 +1,13 @@
 $(document).ready(function(){
     var source = document.location.hash.substr(1) || "2975945008";
+    var href = document.location.href;
+    if (href.indexOf("?") != -1) {
+        param = href.split("?")[1];
+    } else {
+        param = "";
+    }
     $.ajax({
-        url:"http://api.weibo.com/2/statuses/friends_timeline.json?source=" + source,
+        url:"http://api.weibo.com/2/statuses/friends_timeline.json?source=" + source + "&" +param.replace("/", ""),
         dataType:"jsonp",
         method:"get",
         success:render_feed,

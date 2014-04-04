@@ -1,7 +1,7 @@
 $(document).ready(function(){
     var source = document.location.hash.substr(1) || "2975945008";
     $.ajax({
-        url:"http://i.api.weibo.com/2/statuses/friends_timeline.json?source=" + source,
+        url:"http://api.weibo.com/2/statuses/friends_timeline.json?source=" + source,
         dataType:"jsonp",
         method:"get",
         success:render_feed,
@@ -47,6 +47,7 @@ function render_one_feed(obj) {
 
         var $foot = $retweeted.find(".foot");
         $foot.find(".time").text(retweeted_status.created_at);
+        $retweeted.find(".text").text(retweeted_status.text);
         $foot.find(".source").html("来自" + retweeted_status.source);
         $foot.find(".reposts").text("转发(" + retweeted_status.reposts_count + ")");
         $foot.find(".comments").text("评论(" + retweeted_status.comments_count + ")");

@@ -3,95 +3,112 @@
   <head>
     <meta charset="utf-8"/>
     <script type="text/javascript" src="js/jquery.js"></script>
-    <link rel="stylesheet" href="css/bootstrap.css" />
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <div class="container">
-      <section id="demo" class="feed cf">
-        <div class="face">
-          <img src="http://tp4.sinaimg.cn/1915548291/50/5677933473/1" alt="" />
+      <div id="feed">
+        <div class="alert alert-success tips">
+          <a href="javascript:void(0)">0条新微博</a>
         </div>
-        <div class="detail">
-          <div class="user">
-            <a href="#">@某某某</a>
-            <i class="icon-approve"></i>
+        <section id="demo" class="feed cf">
+          <div class="face">
+            <a href="#"><img src="http://tp4.sinaimg.cn/1915548291/50/5677933473/1" alt="" /></a>
           </div>
-          <div class="text">
-            什么什么什么
-          </div>
-          <div class="media retweeted">
-            <!--
-            <div class="arrow">
-              <em class="S_line1_c">◆</em>
-              <span class="S_bg1_c">◆</span>
+          <div class="detail">
+            <div class="user">
+              <a href="#">@某某某</a>
+              <i class="icon-approve"></i>
             </div>
-            -->
-            <div class="forward-content">
-              <div class="user-from">
-                <a href="#">@苍井空</a>
-                <i class="icon-approve"></i>
+            <div class="text">
+              什么什么什么
+            </div>
+            <div class="media retweeted">
+              <div class="arrow">
+                <span class="S_bg1_c">◆</span>
+                <span class="S_line1_c">◆</span>
               </div>
-              <div class="text">
-                你们好吗
-              </div>
-              <div class="foot">
-                <div class="from cf">
-                  <div class="time">20分钟前</div>
-                  <div class="source">
-                    来自<a href="#">微博 weibo.com</a>
+              <div class="forward-content">
+                <div class="user-from">
+                  <a href="#">@苍井空</a>
+                  <i class="icon-approve"></i>
+                </div>
+                <div class="text">
+                  你们好吗
+                </div>
+                <div class="foot">
+                  <div class="from cf">
+                    <div class="time">20分钟前</div>
+                    <div class="source">
+                      来自<a href="#">微博 weibo.com</a>
+                    </div>
+                  </div>
+                  <div class="handle cf">
+                    <li>
+                      <a href="" class="attitudes">
+                      <i class="icon-good"></i>
+                        (122)
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" class="reposts">
+                        转发(100)
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" class="comments">
+                        评论(50)
+                      </a>
+                    </li>
                   </div>
                 </div>
-                <div class="handle cf">
-                  <li>
-                    <i class="icon-good"></i>
-                    <a href="" class="attitudes">
-                      (122)
-                    </a>
-                  </li>
-                  <li>
-                    <a href="" class="reposts">
-                      转发(100)
-                    </a>
-                  </li>
-                  <li>
-                    <a href="" class="comments">
-                      评论(50)
-                    </a>
-                  </li>
+              </div>
+            </div>
+            <div class="foot">
+              <div class="from cf">
+                <div class="time">20分钟前</div>
+                <div class="source">
+                  来自<a href="#">微博 weibo.com</a>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="foot">
-            <div class="from cf">
-              <div class="time">20分钟前</div>
-              <div class="source">
-                来自<a href="#">微博 weibo.com</a>
+              <div class="handle cf">
+                <li>
+                  <a href="" class="attitudes">
+                  <i class="icon-good"></i>
+                    (122)
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="reposts">
+                    转发(100)
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="comments">
+                    评论(50)
+                  </a>
+                </li>
               </div>
             </div>
-            <div class="handle cf">
-              <li>
-                <i class="icon-good"></i>
-                <a href="" class="attitudes">
-                  (122)
-                </a>
-              </li>
-              <li>
-                <a href="" class="reposts">
-                  转发(100)
-                </a>
-              </li>
-              <li>
-                <a href="" class="comments">
-                  评论(50)
-                </a>
-              </li>
-            </div>
           </div>
+        </section>
+      </div>
+      <div class="navigation">
+        <div class="prev">
+          <span class="glyphicon glyphicon-chevron-up"></span>
         </div>
-      </section>
+        <div class="index"></div>
+        <div class="next">
+          <span class="glyphicon glyphicon-chevron-down"></span>
+        </div>
+      </div>
+      <div id="profile">
+
+      </div>
     </div>
   </body>
 </html>
+<script type="text/javascript" src="js/emotions.js"></script>
 <script type="text/javascript" src="js/index.js"></script>

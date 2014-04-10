@@ -12,11 +12,17 @@ li {
 li:first-child {
     border:none;
 }
+section {
+    width:700px;
+    padding:10px 0;
+}
 .foot {
     font-size:12px;
     margin:10px 0;
 }
-
+#demo {
+    display:none;
+}
 
 .cf:after {
     content:"."; 
@@ -29,6 +35,7 @@ li:first-child {
     margin-top:50px;
     width:900px;
     height:600px;
+    position:relative;
 }
 section > div {
     float:left;
@@ -44,6 +51,10 @@ section > div {
     border:1px solid green;
     border-radius:2px;
     background-color:#F7F2F2;
+}
+.face {
+    width:50px;
+    min-height:1px;
 }
 .from > div {
     float:left;
@@ -70,7 +81,8 @@ section > div {
     background-repeat:no-repeat;
     width:13px;
     height:14px;
-    margin:0;
+    float:left;
+    margin-top:-1px;
 }
 .icon-approve {
     background-image:url(../img/bg_line.png);
@@ -79,6 +91,7 @@ section > div {
     width:16px;
     height:14px;
     vertical-align:text-bottom;
+    display:inline-block;
 }
 .time {
     margin-right:10px;
@@ -86,7 +99,8 @@ section > div {
 .arrow {
     position: absolute;
     z-index: 0;
-    margin: -18px 0 0;
+    margin-top:-6px;
+    margin-left:10px;
     width: 22px;
     cursor: default;
 }
@@ -100,10 +114,52 @@ section > div {
 }
 .S_line1_c {
     color:#F7F2F2;
+    position:absolute;
 }
 .S_bg1_c {
     color:green;
+    position:absolute;
+    margin-top:-2px;
 }
 .arrow span {
-    margin:-11px 0 0;
+}
+.tips {
+    width:670px;
+    padding:0;
+    display:none;
+}
+.tips a {
+    color:green;
+    display:block;
+}
+.navigation {
+    position:fixed;
+    width:40px;
+    margin-left:700px;
+    transition:0.9s;
+    -webkit-transition:0.9s;
+    /*bottom:-700px;*/
+    top:50px;
+}
+.navigation img {
+    margin:1px;
+    padding:2px;
+    border:2px solid transparent;
+}
+.navigation .index {
+    min-height:10px;
+    max-height:600px;
+    overflow:hidden;
+    transition:0.9s;
+    -webkit-transition:0.9s;
+}
+.prev, .next {
+    font-size:20px;
+    cursor:pointer;
+}
+.disabled {
+    color:rgb(204, 201, 201);
+}
+.navigation .img-active {
+    border:2px solid rgb(241, 156, 122)
 }

@@ -84,15 +84,21 @@ section > div {
     float:left;
     margin-top:-1px;
 }
-.icon-approve {
+.icon-approve, .icon-approve-organization {
     background-image:url(../img/bg_line.png);
-    background-position:-50px -6px;
     background-repeat:no-repeat;
     width:16px;
     height:14px;
     vertical-align:text-bottom;
     display:inline-block;
 }
+.icon-approve {
+    background-position:-50px -6px;
+}
+.icon-approve-organization {
+    background-position:-75px -6px;
+}
+
 .time {
     margin-right:10px;
 }
@@ -128,8 +134,11 @@ section > div {
     padding:0;
     display:none;
 }
+.tips a:hover {
+    color:#fff;
+}
 .tips a {
-    color:green;
+    color:rgb(30, 175, 30);
     display:block;
 }
 .navigation {
@@ -162,4 +171,84 @@ section > div {
 }
 .navigation .img-active {
     border:2px solid rgb(241, 156, 122)
+}
+.notice {
+    position: fixed;
+    top: 0;
+    margin-left:700px;
+    min-width:112px;
+}
+.notice ul {
+}
+.notice li {
+    border:none;
+    padding:0;
+    transition:0.9s;
+    -webkit-transition:0.9s;
+}
+.nav>li>a {
+    padding:10px;
+    display:inline-block;
+}
+.icon-unread-at, .icon-unread-comments, .icon-unread-good, .icon-unread-follower, .icon-unread-msg {
+    background-image: url(../img/icon.png);
+    background-repeat: no-repeat;
+    width: 17px;
+    height: 17px;
+    float: left;
+    margin-top: -1px;
+}
+.icon-unread-good {
+    background-position: 0 -197px;
+}
+.icon-unread-comments {
+    background-position: 0 -170px;
+}
+.icon-unread-at {
+    background-position: 0 -147px;
+}
+.icon-unread-follower {
+    background-position: 0 -100px;
+}
+.icon-unread-msg {
+    background-position: 0 -75px;
+}
+.badge {
+    color:#fff;
+    background-color:#EB962B;
+}
+.notice .unread {
+    display:none;
+}
+
+#feed, .profile {
+    float:left;
+}
+.profile {
+    border: 1px solid;
+    margin-top:-50px;
+    display:none;
+}
+.profile img {
+    width: 120px;
+    height: 120px;
+    
+}
+
+.image {
+    margin-top:5px;
+}
+.image img {
+    margin-top:5px;
+    margin-right:5px;
+}
+.mulity-image {
+    width:80px;
+    height:80px;
+}
+.big-cur {
+    cursor:url(../img/big.cur), auto!important;
+}
+.small-cur {
+    cursor:url(../img/small.cur), auto!important;
 }
